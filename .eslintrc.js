@@ -16,5 +16,10 @@ module.exports = {
         "project": "./tsconfig.json" // TypeScriptのLint時に参照するconfigファイルを指定
     },
     root: true, // 上位ディレクトリにある他のeslintrcを参照しないようにする
-    rules: {}
+    rules: {},
+    ignorePatterns: [   // プロジェクトでTypeScriptを使用しているので、JSの設定ファイルESLintの対象外にする
+    "/lib/**/*", // Ignore built files.
+    "**/*.js",
+    // "jest.config.js",
+]
 }
