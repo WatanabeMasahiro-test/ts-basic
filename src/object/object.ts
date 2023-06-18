@@ -28,15 +28,15 @@ export default function objectSample() {
   /**
    * オプショナルとreadonly
    */
-const torahack: {
+  const torahack: {
     age: number
     lastName: string
     readonly firstName: string
     gender?: string
   } = {
     age: 28,
-    lastName: "Yamada",
-    firstName: "Taro",
+    lastName: 'Yamada',
+    firstName: 'Taro',
   }
 
   torahack.gender = 'male'
@@ -52,7 +52,7 @@ const torahack: {
     [countryName: string]: string
   } = {
     Japan: 'Tokyo',
-    Korea: 'Seoul'
+    Korea: 'Seoul',
   }
 
   capitals.China = 'Beijing'

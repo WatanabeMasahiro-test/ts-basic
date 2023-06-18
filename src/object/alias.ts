@@ -9,17 +9,17 @@ export default function typeAliasSample() {
   }
 
   const japan: Country = {
-    capital:'Tokyo',
+    capital: 'Tokyo',
     language: 'Japanese',
-    name: 'Japan'
+    name: 'Japan',
   }
 
   console.log('Object alias sample 1:', japan)
 
   const america: Country = {
-    capital:'Washington, D.C.',
+    capital: 'Washington, D.C.',
     language: 'English',
-    name: 'USA'
+    name: 'USA',
   }
 
   console.log('Object alias sample 2:', america)
@@ -47,32 +47,34 @@ export default function typeAliasSample() {
   // 交差型... KnightかつWizardの型を持つ
   type Paladin = Knight & Wizard
 
-  const adventurer1: Adventurer = { // Knight寄りの冒険者
+  const adventurer1: Adventurer = {
+    // Knight寄りの冒険者
     hp: 100,
     sp: 30,
     weapon: '木の剣',
-    swordSkill: '三連切り'
+    swordSkill: '三連切り',
   }
 
-  const adventurer2: Adventurer = { // Wizard寄りの冒険者
+  const adventurer2: Adventurer = {
+    // Wizard寄りの冒険者
     hp: 100,
     mp: 30,
     weapon: '木の杖',
-    magicSkill: 'ファイヤーボール'
+    magicSkill: 'ファイヤーボール',
   }
 
   console.log('Object alias sample 3:', adventurer1)
   console.log('Object alias sample 4:', adventurer2)
 
-  const paladin: Paladin = {  // 聖騎士（Knight × Wizard）
+  const paladin: Paladin = {
+    // 聖騎士（Knight × Wizard）
     hp: 300,
     sp: 100,
     mp: 100,
     weapon: '銀の剣',
     swordSkill: '三連切り',
-    magicSkill: 'ファイヤーボール'
+    magicSkill: 'ファイヤーボール',
   }
 
   console.log('Object alias sample 5:', paladin)
-
 }
