@@ -80,7 +80,31 @@ class Game {
   private static makePieces() {
     return [
       new Osho('first', 5, '1'),
-      new Osho('second', 5, '9')
+      new Osho('second', 5, '9'),
+
+      // 先手の歩
+      new Fu('first', 1, '3'),
+      new Fu('first', 2, '3'),
+      new Fu('first', 3, '3'),
+      new Fu('first', 4, '3'),
+      new Fu('first', 5, '3'),
+      new Fu('first', 6, '3'),
+      new Fu('first', 7, '3'),
+      new Fu('first', 8, '3'),
+      new Fu('first', 9, '3'),
+
+      // 後手の歩
+      new Fu('second', 1, '7'),
+      new Fu('second', 2, '7'),
+      new Fu('second', 3, '7'),
+      new Fu('second', 4, '7'),
+      new Fu('second', 5, '7'),
+      new Fu('second', 6, '7'),
+      new Fu('second', 7, '7'),
+      new Fu('second', 8, '7'),
+      new Fu('second', 9, '7'),
     ]
   }
 }
+
+new Game()
