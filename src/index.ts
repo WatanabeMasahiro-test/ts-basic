@@ -55,8 +55,19 @@
 /**
  * ↓↓↓ 07. ジェネリック型とポリモーフィズム ↓↓↓
  */
-import genericBasicSample from './generics/basic'
-import genericsAdvancedSample from './generics/advanced'
+// import genericBasicSample from './generics/basic'
+// import genericsAdvancedSample from './generics/advanced'
 
-genericBasicSample()
-genericsAdvancedSample()
+// genericBasicSample()
+// genericsAdvancedSample()
+
+/**
+ * ↓↓↓ 10. 非同期処理 ↓↓↓
+ */
+// import callbackSample from './asynchronous/callback'
+// import promiseSample from './asynchronous/promise'
+import asyncAwaitSample from "./asynchronous/asyncAwaiit";
+
+// callbackSample()
+// promiseSample()
+asyncAwaitSample()
